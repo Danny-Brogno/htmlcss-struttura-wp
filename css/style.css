@@ -1,0 +1,49 @@
+/*rules whole page*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*header*/
+
+header {
+  background-color: yellow;
+  height: 150px;
+}
+
+/*main rules*/
+
+.aside {
+  background-color: pink;
+  height: 100px;
+  width: 25%;
+  float: left;
+}
+
+.sezione {
+  background-color: purple;
+  height: 200px;
+  width: 50%;
+  float: left;
+}
+
+.aside-due {
+  background-color: pink;
+  height: 100px;
+  width: 25%;
+  float: right;
+}
+/*footer rules*/
+
+footer {
+  height: 70px;
+  background-color: lightblue;
+}
