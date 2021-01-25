@@ -1,49 +1,75 @@
 /*rules whole page*/
 
 * {
-  margin: 0;
-  padding: 0;
+  width: 90%;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
-.row::after {
+/*pink box*/
+
+header {
+  background-color: #e579e6;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+/* yellow box */
+
+main {
+  background-color: #e1d67a;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/* blue box container */
+
+.container {
+  background-color: #0087ff;
+  height: 800px;
+  margin-bottom: 20px;
+}
+
+/* 3 boxes inside the blue box */
+
+#horizontal-box {
+  background-color: #abcfe7;
+  height: 100px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.box {
+  width: 20%;
+  height: 660px;
+  background-color: #abcfe7;
+}
+
+.left {
+  float: left;
+}
+
+#box-middle {
+  width: 57%;
+  height: 660px;
+  margin-left: 20px;
+  background-color: #abcfe7;
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* purple box */
+
+footer {
+  background-color: #8601ff;
+  height: 75px;
+}
+
+.container::after {
   content: "";
   display: table;
   clear: both;
-}
-
-/*header*/
-
-header {
-  background-color: yellow;
-  height: 150px;
-}
-
-/*main rules*/
-
-.aside {
-  background-color: pink;
-  height: 100px;
-  width: 25%;
-  float: left;
-}
-
-.sezione {
-  background-color: purple;
-  height: 200px;
-  width: 50%;
-  float: left;
-}
-
-.aside-due {
-  background-color: pink;
-  height: 100px;
-  width: 25%;
-  float: right;
-}
-/*footer rules*/
-
-footer {
-  height: 70px;
-  background-color: lightblue;
 }
